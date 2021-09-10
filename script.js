@@ -7,12 +7,13 @@ function compute()
     var year = new Date().getFullYear()+parseInt(years);
 
     if (principal <= 0) {
-        window.alert("Enter a positive number")
+        window.alert("Enter a positive number");
+        window.location.href="index.html";
     } else {
         return document.getElementById("result").innerHTML="If you deposit "+principal+"," +
         "\<br\>at an interest rate of "+rate+"%\<br\>" +
         "You will receive an amount of "+interest+",\<br\>" +
-        "in the year "+year+"\<br\>"
+        "in the year "+year+"\<br\>";
     }
 }
 
