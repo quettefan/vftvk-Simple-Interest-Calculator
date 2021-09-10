@@ -8,7 +8,7 @@ function compute()
 
     if (principal <= 0) {
         window.alert("Enter a positive number");
-        window.location.href="index.html";
+        return document.getElementById("principal").focus();
     } else {
         return document.getElementById("result").innerHTML="If you deposit <mark>"+principal+"</mark>," +
         "\<br\>at an interest rate of <mark>"+rate+"%</mark>,<br\>" +
